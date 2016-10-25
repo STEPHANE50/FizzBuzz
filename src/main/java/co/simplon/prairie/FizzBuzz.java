@@ -30,19 +30,20 @@ public class FizzBuzz {
         if (entier==0) 
         return "0"; 
 
+        if ((entier==15) || (entier==30))
+        return "FizzBuzz"; 
+
+        
         if (entier%3==0)
         return "Fizz";
 
         else if (entier%5==0)
         return "Buzz";  
 
-        else if(entier==15)
-        return "FizzBuz"; 
-
         else
-        return "entier";
 
-           
+        return "entier";
+     
 
      }   
             

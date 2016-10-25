@@ -18,12 +18,32 @@ public class FizzBuzzTest {
         );
     }
     
+     @Test
+    public void la_correspondance_de_15_est_FizzBuzz() {
+       FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(
+                "La correspondance pour 15 doit être FizzBuzz.",
+                "FizzBuzz",
+                fizzBuzz.determinerCorrespondance(15)
+        );
+    }
+        
     @Test
-    public void la_correspondance_de_2_est_2() {
+    public void la_correspondance_de_30_est_FizzBuzz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(
+                "La correspondance pour 30 doit être FizzBuzz.",
+                "FizzBuzz",
+                fizzBuzz.determinerCorrespondance(30)
+        );        
+    }
+
+    @Test
+    public void la_correspondance_de_2_est_entier() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(
                 "La correspondance pour 2 doit être 2.",
-                "2",
+                "entier",
                 fizzBuzz.determinerCorrespondance(2)
         );
     }
@@ -63,30 +83,12 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(
                 "La correspondance pour 10 doit être Buzz.",
-                "Fizz",
+                "Buzz",
                 fizzBuzz.determinerCorrespondance(10)
         );
     }
 
-     @Test
-    public void test_Exception() {
-       FizzBuzz fizzBuzz = new FizzBuzz();
-        assertEquals(
-                "La correspondance pour 15 doit être FizzBuzz.",
-                "FizzBuzz",
-                fizzBuzz.determinerCorrespondance(15)
-        );
-    }
-        
-    @Test
-    public void la_correspondance_de_30_est_FizzBuzz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        assertEquals(
-                "La correspondance pour 30 doit être FizzBuzz.",
-                "FizzBuzz",
-                fizzBuzz.determinerCorrespondance(30)
-        );        
-    }
+    
 
 
 
