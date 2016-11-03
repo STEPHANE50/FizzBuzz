@@ -12,7 +12,7 @@ public class FizzBuzz {
     /**
      * Constructeur
      */
-    public void FizzBuzz() {
+    public FizzBuzz() {
     }
 
     /**
@@ -23,7 +23,10 @@ public class FizzBuzz {
      * @param fin   Index (entier) de fin pour l'affichage
      */
     public void afficherListeEntiers(int debut, int fin) {
-       for(int entier = 1; entier <= (50); entier++) {}
+       for(int entier = debut; entier <= (fin); entier++) {
+    	   String resultat=determinerCorrespondance(entier);
+    	   System.out.println(resultat);
+       }
     }
 
     protected String determinerCorrespondance(int entier) {
@@ -42,7 +45,7 @@ public class FizzBuzz {
 
         else
 
-        return "entier";
+        return String.valueOf(entier);
      
 
      }   

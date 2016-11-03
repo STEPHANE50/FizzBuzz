@@ -17,7 +17,7 @@ public class FizzBuzzTest {
                 fizzBuzz.determinerCorrespondance(0)
         );
     }
-    
+
      @Test
     public void la_correspondance_de_15_est_FizzBuzz() {
        FizzBuzz fizzBuzz = new FizzBuzz();
@@ -39,11 +39,11 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void la_correspondance_de_2_est_entier() {
+    public void la_correspondance_de_2_est_2() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(
                 "La correspondance pour 2 doit être 2.",
-                "entier",
+                "2",
                 fizzBuzz.determinerCorrespondance(2)
         );
     }
